@@ -1,4 +1,4 @@
-package pl.ArturZgodka.Exercises;
+package pl.JavaCodingExercises.Exercises;
 
 public class checkForUniqueChars {
 

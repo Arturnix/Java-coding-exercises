@@ -1,4 +1,4 @@
-package pl.ArturZgodka.LeetCode;
+package pl.JavaCodingExercises.LeetCode;
 
 import java.util.Arrays;
 

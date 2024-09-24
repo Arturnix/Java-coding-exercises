@@ -1,6 +1,4 @@
-package pl.ArturZgodka;
-
-import pl.ArturZgodka.LeetCode.RemoveDuplicatesII;
+package pl.JavaCodingExercises;
 
 public class Main {
     public static void main(String[] args) {
