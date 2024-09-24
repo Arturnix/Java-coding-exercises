@@ -1,6 +1,7 @@
 package pl.JavaCodingExercises;
 
 import pl.JavaCodingExercises.Exercises.CheckPermutationOfTwoStrings;
+import pl.JavaCodingExercises.Exercises.URLify;
 
 public class Main {
     public static void main(String[] args) {
@@ -10,6 +11,9 @@ public class Main {
         //RemoveDuplicates.removeDuplicates(new int[]{0,0,1,1,2});
         //RemoveDuplicatesII.removeDuplicates(new int[]{1});
         //CheckPermutationOfTwoStrings.checkPermutation("12abc", "1ab2c");
-        System.out.println(CheckPermutationOfTwoStrings.checkPermutationWithCharsCount("aabc", "cbaa"));
+        //System.out.println(CheckPermutationOfTwoStrings.checkPermutationWithCharsCount("aabc", "cbaa"));
+        String string = "ab cffgre kl    ";
+        char[] str = string.toCharArray();
+        URLify.URLifyString(str, 12);
     }
 }

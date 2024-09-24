@@ -39,7 +39,7 @@ public class CheckPermutationOfTwoStrings {
             return true;
         }
 
-        int[] charsInString = new int[128]; //assumption of chars representation. Holds numbers of occurences of every char in string.
+        int[] charsInString = new int[128]; //assumption of chars representation. Holds numbers of occurences of every char in string. Character set for ASCII.
         //sprawdzam jakiego znaku jest ile powtórzeń danym stringu.
 
         char[] string1AsArray = string1.toCharArray();
