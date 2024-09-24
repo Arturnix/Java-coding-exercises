@@ -1,6 +1,6 @@
 package pl.JavaCodingExercises.Exercises;
 
-public class checkForUniqueChars {
+public class CheckForUniqueChars {
 
     public static boolean isUniqueChars(String wordToCheck) {
 
