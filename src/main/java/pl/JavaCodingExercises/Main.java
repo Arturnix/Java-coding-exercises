@@ -1,6 +1,7 @@
 package pl.JavaCodingExercises;
 
 import pl.JavaCodingExercises.Exercises.CheckPermutationOfTwoStrings;
+import pl.JavaCodingExercises.Exercises.PalindromePermutation;
 import pl.JavaCodingExercises.Exercises.URLify;
 
 public class Main {
@@ -12,8 +13,9 @@ public class Main {
         //RemoveDuplicatesII.removeDuplicates(new int[]{1});
         //CheckPermutationOfTwoStrings.checkPermutation("12abc", "1ab2c");
         //System.out.println(CheckPermutationOfTwoStrings.checkPermutationWithCharsCount("aabc", "cbaa"));
-        String string = "ab cffgre kl    ";
+        /*String string = "ab cffgre kl    ";
         char[] str = string.toCharArray();
-        URLify.URLifyString(str, 12);
+        URLify.URLifyString(str, 12);*/
+        System.out.println(PalindromePermutation.isPalindromePermutation("t a c t coapapa"));
     }
 }
