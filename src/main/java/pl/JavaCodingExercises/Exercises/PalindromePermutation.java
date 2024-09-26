@@ -9,7 +9,7 @@ public class PalindromePermutation {
         char[] stringAsArray = string.toCharArray();
         Arrays.sort(stringAsArray);
 
-        int[] charOccurrences = new int[128];
+        int[] charOccurrences = new int[128]; //can be reduced to letters only
         int uniqueCharCount = 0;
 
        for(char c : stringAsArray) {

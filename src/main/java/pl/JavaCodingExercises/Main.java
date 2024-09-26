@@ -3,6 +3,7 @@ package pl.JavaCodingExercises;
 import pl.JavaCodingExercises.Exercises.CheckPermutationOfTwoStrings;
 import pl.JavaCodingExercises.Exercises.PalindromePermutation;
 import pl.JavaCodingExercises.Exercises.URLify;
+import pl.JavaCodingExercises.LeetCode.MajorityElement;
 
 public class Main {
     public static void main(String[] args) {
@@ -16,6 +17,7 @@ public class Main {
         /*String string = "ab cffgre kl    ";
         char[] str = string.toCharArray();
         URLify.URLifyString(str, 12);*/
-        System.out.println(PalindromePermutation.isPalindromePermutation("t a c t coapapa"));
+        //System.out.println(PalindromePermutation.isPalindromePermutation("t a c t coapapa"));
+        System.out.println(MajorityElement.findMajorityElement(new int[]{2,2,1,1,1,2,2}));
     }
 }
