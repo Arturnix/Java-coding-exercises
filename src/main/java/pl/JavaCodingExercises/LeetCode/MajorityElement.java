@@ -37,5 +37,13 @@ public class MajorityElement {
             }
         }
         return 1; //assumption that majority element always exists in nums array.
+
+        /*Arrays.sort(nums); //szukam rozwiązania w połowie posortowanej tablicy.
+        int n = nums.length-1;
+        int target = n/2 ;
+        if(nums[0]==nums[target])
+            return nums[0];
+        else
+            return nums[target];*/
     }
 }
