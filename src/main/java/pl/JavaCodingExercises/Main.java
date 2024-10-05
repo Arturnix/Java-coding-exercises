@@ -1,6 +1,7 @@
 package pl.JavaCodingExercises;
 
 import pl.JavaCodingExercises.Exercises.OneEditAway;
+import pl.JavaCodingExercises.LeetCode.BestTimeToBuyAndSellStock;
 
 public class Main {
     public static void main(String[] args) {
@@ -16,6 +17,7 @@ public class Main {
         URLify.URLifyString(str, 12);*/
         //System.out.println(PalindromePermutation.isPalindromePermutation("t a c t coapapa"));
         //System.out.println(MajorityElement.findMajorityElement(new int[]{2,2,1,1,1,2,2}));
-        System.out.println(OneEditAway.checkIsStringOneOrZeroEditAway("pale", "pale"));
+        //System.out.println(OneEditAway.checkIsStringOneOrZeroEditAway("pale", "pale"));
+        //System.out.println(BestTimeToBuyAndSellStock.maximizeProfit(new int[]{3,2,6,5,0,3}));
     }
 }
