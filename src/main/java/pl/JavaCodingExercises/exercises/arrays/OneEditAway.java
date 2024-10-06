@@ -1,4 +1,4 @@
-package pl.JavaCodingExercises.Exercises;
+package pl.JavaCodingExercises.exercises.arrays;
 
 import static java.lang.Math.abs;
 

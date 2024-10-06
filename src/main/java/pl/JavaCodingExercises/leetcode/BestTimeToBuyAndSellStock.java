@@ -1,8 +1,4 @@
-package pl.JavaCodingExercises.LeetCode;
-
-import java.awt.image.AreaAveragingScaleFilter;
-import java.lang.reflect.Array;
-import java.util.Arrays;
+package pl.JavaCodingExercises.leetcode;
 
 public class BestTimeToBuyAndSellStock {
 

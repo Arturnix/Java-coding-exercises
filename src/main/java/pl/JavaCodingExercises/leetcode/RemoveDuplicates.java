@@ -1,4 +1,4 @@
-package pl.JavaCodingExercises.LeetCode;
+package pl.JavaCodingExercises.leetcode;
 
 public class RemoveDuplicates {
     public static int removeDuplicates(int[] nums) {

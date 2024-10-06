@@ -1,4 +1,4 @@
-package pl.JavaCodingExercises.Exercises;
+package pl.JavaCodingExercises.exercises.arrays;
 
 public class CheckForUniqueChars {
 

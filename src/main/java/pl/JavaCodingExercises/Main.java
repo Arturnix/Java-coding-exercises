@@ -1,8 +1,5 @@
 package pl.JavaCodingExercises;
 
-import pl.JavaCodingExercises.Exercises.OneEditAway;
-import pl.JavaCodingExercises.LeetCode.BestTimeToBuyAndSellStock;
-
 public class Main {
     public static void main(String[] args) {
 
