@@ -21,28 +21,39 @@ public class RemoveDups {
         node4.next = node5;
         node5.next = node6;
 
-        RemoveDups removeDups = new RemoveDups();
-        removeDups.removeDups(node1);
+        RemoveDups removeDupsObject = new RemoveDups();
+        removeDupsObject.removeDups(node1);
 
         //print result
-        while(node1 != null) {
+        while (node1 != null) {
             System.out.println(node1.data + " ");
             node1 = node1.next;
         }
     }
 
-    public void removeDups(Node node) {
-        HashSet<Integer> hs = new HashSet<>();
-        Node previous = null; //pointer to the previous node. Use when I will delete node from the list
+        public void removeDups(Node node){
+            HashSet<Integer> hs = new HashSet<>();
+            Node previous = null; //pointer to the previous node. Use when I will delete node from the list
 
-        while (node != null) { //domyslnie ostatni node nie ma ustawionego next na inny node tylko już i tak z konstruktora jest dany mu null. Więc dla niego nie ma podmiany z null na inny node.
-            if(!hs.contains(node.data)) {
-                hs.add(node.data);
-                previous = node; //czyli poprzedni teraz bedzie tym obecnie odwiedzonym w danej iteracji i on juz przechodzi do historii jako previous aby zapewnic mozliwą iterację po wszystkich elementach.
-            } else { //delete node from the list, because hs contains this node (value of this node, data field of this node).
-                previous.next = node.next; //czyli next node, na jaki wskazuje ten previous to bedzie ten, na który jako next wskazuje obecny node. Czyli od obecnego noda odpinam wskazanie na next i wpinam je do tego previous node. I tym sposobem obecny node jest odpięty z mojej listy bo nie ma już elementu - node w mojej liście, który by na niego wskazywał.
+            while (node != null) { //domyslnie ostatni node nie ma ustawionego next na inny node tylko już i tak z konstruktora jest dany mu null. Więc dla niego nie ma podmiany z null na inny node.
+                if (!hs.contains(node.data)) {
+                    hs.add(node.data);
+                    previous = node; //czyli poprzedni teraz bedzie tym obecnie odwiedzonym w danej iteracji i on juz przechodzi do historii jako previous aby zapewnic mozliwą iterację po wszystkich elementach.
+                } else { //delete node from the list, because hs contains this node (value of this node, data field of this node).
+                    previous.next = node.next; //czyli next node, na jaki wskazuje ten previous to bedzie ten, na który jako next wskazuje obecny node. Czyli od obecnego noda odpinam wskazanie na next i wpinam je do tego previous node. I tym sposobem obecny node jest odpięty z mojej listy bo nie ma już elementu - node w mojej liście, który by na niego wskazywał.
+                }
+                node = node.next; //w ten sposób iteruję po elementach czyli moich nodach.
             }
-            node = node.next; //w ten sposób iteruję po elementach czyli moich nodach.
+        }
+
+    public static class Node {
+
+        public int data;
+        public Node next; //pointer to the next node
+
+        public Node(int data) {
+            this.data = data;
+            this.next = null;
         }
     }
 }
