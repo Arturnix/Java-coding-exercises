@@ -29,9 +29,7 @@ public class ReverseList {
                 previousNode = headNode; //prevNode staje się tym Nodem, na którym obecnie jestem wskaźnikiem headNode
                 headNode = newOrderNode; //przejście na kolejny Node
             }
-
             System.out.println(previousNode);
-
         }
 
     public static class Node {
