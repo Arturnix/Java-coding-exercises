@@ -56,6 +56,29 @@ public class Partition {
         return lessThanRoot;
     }
 
+    public Node sortLinkedList2Pointers(Node node, int partition) {
+        //space complexity O(n) ponieważ iteruje raz po tej samej liscie
+        //time complexity O(1) ponieważ nie korzystam z dodatkowych struktor danych tylko z tych pointerów
+        Node head = node;
+        Node tail = node;
+
+        while(node != null) {
+            Node next = node.next;
+            if(node.data >= partition) {
+                tail.next = node; //przesuwam wartosc i przesuwam sam wskaznik. To jest wskaznik tail,czyli na koniec listy wskazuje wiec przesuwam w prawo wzgledem noda startowego podanego jako argument metody
+                tail = node; //wskazuje teraz na ten nowy node w kolejnosci listy
+            } else {
+                node.next = head; //przesuwam w lewo wzgledem podanego argumentu metody czyli tego startowego noda.
+                head = node;
+            }
+            node = next;
+        }
+
+        tail.next = null;
+
+        return head;
+    }
+
     public static void main(String[] args) {
         Node node1 = new Node(3);
         Node node2 = new Node(5);
@@ -74,6 +97,7 @@ public class Partition {
 
         Partition partition = new Partition();
         System.out.println(partition.sortLinkedList(node1, 5));
+        System.out.println(partition.sortLinkedList2Pointers(node1, 5));
 
     }
 
